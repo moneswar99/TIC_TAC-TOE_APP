@@ -1,17 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+import java.util.Scanner;
 
-    <groupId>org.example</groupId>
-    <artifactId>tictacapp</artifactId>
-    <version>1.0-SNAPSHOT</version>
+        /**
+        * TicTacToe
+        * UC3 reads a slot number (1–9) entered by the user. This use case
+        * focuses only on input handling without validation.
+        */
+        public class TicTacToe {
 
-    <properties>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+        /**
+        * Entry point of the program. Reads slot input and prints it back
+        * to verify correct user input handling.
+        */
+        public static void main(String[] args) {
 
-</project>
+        int slot = getUserSlot();
+        System.out.println("Slot entered: " + slot);
+        }
+
+        /**
+        * Reads an integer slot value from the user.
+        * Input: Scanner object
+        * Output: Slot number (1–9)
+        * Hint: Validation will be added in later use cases.
+        */
+        static int getUserSlot() {
+        Scanner scanner = new Scanner(System.in);
+        int slot = scanner.nextInt();
+        return slot;
+        }
+        }
