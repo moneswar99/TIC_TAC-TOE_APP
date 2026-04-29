@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class uc7{
+public class TicTacToe {
 
     static char[][] board = {
             {'-', '-', '-'},
