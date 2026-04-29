@@ -3,7 +3,7 @@
  * UC10 checks whether the game has ended in a draw
  * by ensuring no empty cells remain on the board.
  */
-public class uc10 {
+public class uc10{
 
     static char[][] board = new char[3][3];
 
